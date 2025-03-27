@@ -1,0 +1,31 @@
+#divEsquerda  {
+ background-color: tomato; 
+  width: 49%;
+  float: left;
+  height: 85%;
+  
+}
+
+body {
+    margin: 0;
+    margin-top: 0;
+}
+
+#divEsquerda p{
+ font-family: 'Caveat', cursive;   
+}
+
+#divEsquerda h1{
+    color: gold;
+}
+
+#divDireita figure img{
+    width: 49%;
+    float:right;
+    margin-left: 1%;
+}
+#divDireita figure img{
+    float: left;
+    width: 35%;
+     
+}
