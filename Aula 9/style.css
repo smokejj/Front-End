@@ -1,0 +1,45 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+main {
+    margin-top: 100px;
+    background-color: rgb(166, 207, 242);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 20px 20px 20px;
+    position: relative;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.imgg {
+    position: absolute;
+    top: -75px; /* metade da altura da imagem */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.imgg img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
