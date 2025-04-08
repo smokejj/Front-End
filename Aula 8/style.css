@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.imgg img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.imgg {
+  text-align: center;
+  width: 400px;
+}
+
+#mago .imgg {
+  background-color: #e67e22;
+}
+#assasin .imgg {
+  background-color: #8e44ad;
+}
+#healer .imgg {
+  background-color: #27ae60;
+}
+#tanker .imgg {
+  background-color: #2980b9;
+}
+#ranger .imgg {
+  background-color: #179d82;
+}
+
+#fighter .imgg {
+  background-color: rgb(206, 40, 40);
+}
