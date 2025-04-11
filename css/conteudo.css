@@ -2,76 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+ 
 }
 
 body {
   background: #000000;
   color: #c7c6c6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-
-.container {
-  background-color: #000000;
-  border-radius: 12px;
-  padding: 30px;
-  margin-top: 40px;
-  width: 90%;
-  max-width: 700px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
   
 }
 
-.imgg {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.imgg img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #e5e5e5;
-  margin-bottom: 10px;
-}
-
-.imgg h1 {
-  font-size: 1.8rem;
-  color: #ffffff;
-}
-
-#content p {
-  margin-bottom: 15px;
-  line-height: 1.6;
-  font-size: 1rem;
-  color: #d1d5db;
-  
-}
-
-#content h4 {
-  margin-bottom: 10px;
-  color: #cbd5e1;
-}
-
-.imgGit img,
-.imgLink img {
-  width: 40px;
-  height: auto;
-  filter: brightness(0) invert(1); 
-}
-
-.links-sociais {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  margin-top: 10px;
-  margin-left: 250px;
-  
-}
 
 .menu-opcoes {
   width: 100%;
@@ -99,6 +40,28 @@ body {
 
 .menu-opcoes a:hover {
   color: #22d3ee; 
+}
+
+.paineis {
+  display: flex;
+  gap: 40px; 
+  margin-top: 30px;
+}
+
+.imgAula3{
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.imgAula5{
+  width: 300px;
+  height: 250px;
+  margin-top: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
 }
 
 footer {
@@ -130,3 +93,4 @@ footer .social li a {
 footer .social li a:hover {
   color: #a3a3ff; 
 }
+
