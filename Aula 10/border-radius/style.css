@@ -1,0 +1,34 @@
+html,body,main{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: space-around;
+}
+
+div{
+    width: 20%;
+    height: 30%;
+    background-color: black;
+
+}
+
+#itemA{
+    border-radius: 15px;
+    box-shadow: 5px 20px 8px grey;
+}
+
+#itemB{
+    border-radius: 5px 20px;
+    box-shadow: 5px 20px 8px grey;
+}
+
+#itemC{
+    border-radius: 5px 20px 50px;
+    box-shadow: 5px 20px 8px grey;
+}
+
+#itemD{
+    border-radius: 5px 20px 50px 100px;
+    box-shadow:inset 5px 20px 8px grey;
+}
+

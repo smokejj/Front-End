@@ -63,8 +63,8 @@ footer .social {
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 0;
-  margin: 0;
+  margin-top: 40px;
+  margin-left: 10px;
 }
 
 footer .social li a {
@@ -77,4 +77,71 @@ footer .social li a {
 
 footer .social li a:hover {
   color: #a3a3ff; 
+}
+
+.container.paineis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 105px;
+}
+
+
+.painelGrito {
+  background: rgba(255, 255, 255, 0.05);  
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.painelGrito:hover {
+  transform: translateY(-5px);
+}
+
+.painelGrito h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color: white;
+}
+
+
+.painelGrito ol {
+  list-style: none;
+}
+
+.painelGrito a {
+  color: #e1eaea;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.painelGrito a:hover {
+  text-decoration: underline;
+}
+
+
+.imgGrito {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #00ffff33;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #cccccc;
 }
