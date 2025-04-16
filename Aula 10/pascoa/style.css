@@ -45,8 +45,20 @@
   p {
     font-size: 1.1rem;
     line-height: 1.6;
-    opacity: 0.3;
+    color: black;
   }
   
+  #ovo img {
+    transition: transform 0.3s ease;
+  }
+  
+  #ovo img:hover {
+    transform: rotate(-10deg) scale(1.05);
+  }
+  
+  #ovo img{
+    width: 100px;
+    opacity: 0.3;
+  }
   
   
