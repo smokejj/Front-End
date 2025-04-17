@@ -1,4 +1,23 @@
 #botoes{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10px;
+    width: 1270px ;
+    height: 400px;
+    
 }
+#botoes button{
+    border-radius: 50px;
+    margin: 5px;
+}
+
+#inputText{
+    height: 150px;
+    width: 99%;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 50px;
+    
+}
+
+
