@@ -55,6 +55,7 @@ body {
 #content h4 {
   margin-bottom: 10px;
   color: #cbd5e1;
+  margin-left: 100px;
 }
 
 .imgGit img,
@@ -130,3 +131,8 @@ footer .social li a {
 footer .social li a:hover {
   color: #a3a3ff; 
 }
+
+#pp{
+  margin-left: 150px;
+}
+

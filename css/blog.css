@@ -38,16 +38,41 @@ body {
   color: #22d3ee;
 }
 
-.imgGrito {
-  border-radius: 8px;
-  margin-top: 10px;
-  margin-left: 5px;
-  width: 50%;
-}
 
 a {
   margin-left: 5px;
 }
+
+.painel:hover{
+  transform: translateX(-5px);
+}
+
+.painel{
+  background-color: #1c1c1e;
+  padding: 20px;
+  border-radius: 12px;
+  width: 290px;
+  height: 350px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  
+}
+
+.painel img{
+  width: 250px;
+  height: 200px;
+  border-radius: 8px;
+  margin-top: 7px;
+
+}
+
+.painel p{
+  color: white;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
 
 footer {
   background-color: 00000;
