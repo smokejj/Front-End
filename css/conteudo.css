@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
 }
 
 body {
@@ -10,13 +9,11 @@ body {
   color: #c7c6c6;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: black;
-  
 }
-
 
 .menu-opcoes {
   width: 100%;
-  background-color: #111111; 
+  background-color: #111111;
   padding: 14px 0;
   box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
   position: sticky;
@@ -39,59 +36,63 @@ body {
 }
 
 .menu-opcoes a:hover {
-  color: #22d3ee; 
+  color: #22d3ee;
 }
 
 .paineis {
   display: flex;
+  gap: 30px;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 30px;
 }
 
 .painel {
-  background-color: #1c1c1e;
+  width: 220px;
+  height: 260px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   padding: 20px;
-  border-radius: 12px;
-  width: 290px;
-  height: 350px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 105px;
 }
 
 .painel:hover {
   transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
-.painel h3 {
-  color: #ffffff;
-  margin-bottom: 10px;
+.painel h2 {
   font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #007bff;
 }
 
-.painel img {
-  width: 100%;
-  max-height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-  border: 2px solid #333;
+.imgAula {
+  max-width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  border-radius: 12px;
 }
 
+.imgAula {
+  max-width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+}
 
-.imgAula3{
+.imgAula3 {
   border-radius: 8px;
   margin-top: 10px;
 }
 
-.imgAula5{
+.imgAula5 {
   width: 300px;
   height: 250px;
   margin-top: 10px;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
@@ -99,7 +100,8 @@ a{
 footer {
   background-color: 00000;
   padding: 20px 0;
-  margin-top: 40px;
+  margin-top: 125px;
+  margin-left: 10px;
   width: 100%;
   text-align: center;
   box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
@@ -123,6 +125,5 @@ footer .social li a {
 }
 
 footer .social li a:hover {
-  color: #a3a3ff; 
+  color: #a3a3ff;
 }
-
