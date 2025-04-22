@@ -64,6 +64,8 @@ a {
   margin-top: 7px;
 }
 
+
+
 .painel p {
   color: white;
   font-size: 12px;
@@ -118,7 +120,21 @@ footer .social li a:hover {
   transition: transform 0.3s ease;
 }
 
+.painelCalculadora {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
 .painelGrito:hover {
+  transform: translateY(-5px);
+}
+
+.painelCalculadora:hover {
   transform: translateY(-5px);
 }
 
@@ -152,6 +168,14 @@ footer .social li a:hover {
   border-radius: 12px;
   border: 2px solid #00ffff33;
 }
+
+.imgCalculadora {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #00ffff33;
+}
+
 
 figure {
   margin: 0;
