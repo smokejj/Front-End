@@ -257,6 +257,13 @@
     color: #a3a3ff;
   }
 
+  #inputlupa{
+    margin-left: 42%;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  
+
 
   /*Blog*/
   * {
@@ -286,6 +293,7 @@
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
+    
   }
 
   .menu-opcoes a:hover {
@@ -376,7 +384,14 @@
     transform: translateY(-5px);
   }
 
-  .painelGrito h2 {
+  .painelGrito h3 {
+    font-size: small;
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+  }
+
+  .painelCalculadora h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
     text-align: center;
@@ -391,7 +406,7 @@
     color: #e1eaea;
     font-weight: bold;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 7rem;
     display: block;
     margin-bottom: 10px;
   }

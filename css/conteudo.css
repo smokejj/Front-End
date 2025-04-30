@@ -114,6 +114,7 @@ footer .social {
   gap: 30px;
   padding: 0;
   margin: 0;
+  
 }
 
 footer .social li a {
@@ -126,4 +127,10 @@ footer .social li a {
 
 footer .social li a:hover {
   color: #a3a3ff;
+}
+
+#inputlupa{
+  margin-left: 42%;
+  border-radius: 5px;
+  font-size: 20px;
 }
