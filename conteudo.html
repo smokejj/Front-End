@@ -6,8 +6,26 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/conteudo.css" />
     <title>Conteudo</title>
+
+     <!-- particles.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <style>
+    /* Fundo de partículas */
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+
+  </style>
   </head>
   <body>
+    <div id="particles-js"></div>
+
     <header class="container">
       <nav class="menu-opcoes">
         <ul>
@@ -70,5 +88,46 @@
       </ul>
     </footer>
     <script src="script.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 80,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: "#ffffff",
+          },
+          shape: {
+            type: "circle",
+          },
+          opacity: {
+            value: 0.3,
+          },
+          size: {
+            value: 3,
+            random: true,
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: "none",
+            out_mode: "out",
+          },
+        },
+        interactivity: {
+          events: {
+            onhover: {
+              enable: true,
+              mode: "repulse",
+            },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,23 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: bisque;
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    color:blue
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    background-color: aqua;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2xp 5px rgb(0,0,0, 0.1);
+}
