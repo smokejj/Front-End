@@ -55,6 +55,7 @@ body {
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 105px;
+  background-color: #171616;
 }
 
 .painel:hover {

@@ -1,0 +1,34 @@
+{
+    "pessoas" :  [
+    {
+        "nome": "Jeferson",
+        "idade": 16,
+        "cpf": 34534234242,
+        "telefone":"3432-123123"
+    },
+    {
+        "nome": "Maria",
+        "idade": 18,
+        "cpf": 301291920129,
+        "telefone":"543323-3232"
+    },
+    {
+        "nome": "Douglas",
+        "idade": 18,
+        "cpf": 56554345435,
+        "telefone":"019901292"
+    },
+    {
+        "nome": "Pâmela",
+        "idade": 15,
+        "cpf": 2092939239293,
+        "telefone":"213213-3231"
+    },
+    {
+        "nome": "Ilde",
+        "idade": 20,
+        "cpf": 5342342432342,
+        "telefone":"1121-21212"
+    }
+    ]
+}
