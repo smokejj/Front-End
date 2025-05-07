@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Pokemon</title>
 </head>
+
 <body>
-    <div id="pokedex"> 
-        <img src="./img/pekedex.png" alt="pokedex">
-    </div>
+    <main>
+        <figure>
+            <div id="container">
+                <img src="./img/pekedex.png" alt="pokedex">
+            </div>
+        </figure>
+        <figure id="imgPokemon">
+            <img id="imgPoke" src="" alt="imagem do pokemon">
+        </figure>
+        <form action="" id="form">
+            <input id="input" type="text">
+        </form>
+        <div id="nome">
+            <span id="idPokemon">ID</span>
+            <span id="nomePokemon">Pokemon</span>
+        </div>
+        <div id="inf">
+            <span id="tipo1">Tipo1</span>
+            <span id="tipo2">Tipo2</span>
+        </div>
+        <div id="inf2">
+            <div id="habilidade">Habilidade:</div>
+            <div id="peso">Peso:</div>
+            <div id="altura">Altura:</div>
+        </div>
+        <div id="bottom"> 
+            <button id="btnVoltar">Voltar</button>
+            <button id="btnProximo">Proximo</button>
+        </div>
+
+    </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>
