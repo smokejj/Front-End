@@ -1,0 +1,121 @@
+@media screen and (min-width: 480px ) and (max-width:480px){
+    body, html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('../img/download\ \(2\).jpg');
+        background-size: cover;
+        image-rendering: auto;
+    }
+    
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 100%;
+    }
+    
+    figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    figure img {
+        width: 100%;
+        height: 100%;
+        max-width: 600px;
+        max-height: 600px;
+        object-fit: contain;
+    }
+    
+    #container {
+        position: relative;
+    }
+    
+    #imgPokemon {
+        position: absolute;
+        top: 40%;
+        width: 120px;
+        height: 120px;
+    }
+    
+    #imgPokemon img {
+        width: 100%;
+        position: absolute;
+        top: -60%;
+        right: 18px;
+        
+    
+    }
+    
+    #input {
+        position: absolute;
+        top: 55%;
+        left: 40%;
+        font-size: 16px;
+        border-radius: 6px;
+        width: 19%;
+    }
+    
+    #nome {
+        position: absolute;
+        top: 65%;
+        left: 40%;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    #inf {
+        position: absolute;
+        top: 70%;
+        left: 40%;
+        font-size: 14px;
+        display: flex;
+        gap: 10px;
+    }
+    
+    #inf2 {
+        position: absolute;
+        top: 75%;
+        left: 40%;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    #habilidade,
+    #peso,
+    #altura {
+        font-weight: 500;
+    }
+    
+    #bottom {
+        position: absolute;
+        top: 89%;
+        left: 42%;
+        display: flex;
+        gap: 15px;
+        height: 5%;
+    
+    }
+    
+    #btnVoltar,
+    #btnProximo {
+        padding: 6px 12px;
+        border-radius: 4px;
+        background-color: #ae3c22;
+        color: white;
+    
+    }
+    
+    #btnVoltar:hover,
+    #btnProximo:hover {
+        background-color: #c62805;
+    }
+    
+}

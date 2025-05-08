@@ -10,9 +10,9 @@ let pesoPoke = document.querySelector("#peso");
 let alturaPoke = document.querySelector("#altura");
 let btnV = document.querySelector("#btnVoltar");
 let btnP = document.querySelector("#btnProximo");
+const boxTipo2 = document.getElementById("boxTipo2"); 
 
 let numeroPokedex = 1;
-
 
 const fetchPokemon = async (pokemon) => {
     const APIresponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
@@ -20,55 +20,58 @@ const fetchPokemon = async (pokemon) => {
     return data;
 }
 
+const playCry = (url) => {
+    const audio = new Audio(url);
+    audio.play().catch(e => { });
+};
+
 const showPokemon = async (pokemon) => {
     const dataPokemon = await fetchPokemon(pokemon);
     if (!dataPokemon) return;
 
-    imgPokemon.src = dataPokemon.sprites.front_default;
+    imgPokemon.src = dataPokemon.sprites.other.showdown.front_default;
     nomePoke.innerHTML = dataPokemon.name;
     idPoke.innerHTML = dataPokemon.id;
-    tipoUm.innerHTML = dataPokemon.types[0].type.name;
-    tipoDois.innerHTML = dataPokemon.types[1] ? dataPokemon.types[1].type.name : "";
+
+     const tipo1 = dataPokemon.types[0].type.name;
+     imgTipo1.src = `./imgType/icons/${tipo1}.svg`;
+     tipoUm.innerHTML = tipo1;
+     if (dataPokemon.types.length > 1) {
+         const tipo2 = dataPokemon.types[1].type.name;
+         imgTipo2.src = `./imgType/icons/${tipo2}.svg`;
+         tipoDois.innerHTML = tipo2;
+         boxTipo2.style.display = "inline"; 
+     } else {
+         imgTipo2.src = "";
+         tipoDois.innerHTML = "";
+         boxTipo2.style.display = "none"; 
+     }
     habilidadePoke.innerHTML = dataPokemon.abilities[0].ability.name;
     pesoPoke.innerHTML = (dataPokemon.weight / 10).toFixed(1) + " kg";
     alturaPoke.innerHTML = (dataPokemon.height / 10).toFixed(1) + " m";
+    
 
-    playCry(dataPokemon.id);
+    if (dataPokemon.cries && dataPokemon.cries.latest) {
+        playCry(dataPokemon.cries.latest);
+    }
 }
 
 formPoke.addEventListener("submit", (event) => {
     event.preventDefault();
     showPokemon(inputF.value.toLowerCase());
-});
+    numeroPokedex = inputF.value
+})
 
-const playCry = (pokemonId) => {
-    // Faz uma requisição para pegar o som do Pokémon
-    fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokemonId}/`)
-        .then(response => response.json())
-        .then(data => {
-            const cryUrl = `https://pokeapi.co/media/sounds/cry/${pokemonId}.mp3`; // URL padrão de som de Pokémon
-            const audio = new Audio(cryUrl);
-            audio.play().catch(err => {
-                console.warn('Som não disponível para este Pokémon', err);
-            });
-        })
-        .catch(err => {
-            console.warn('Erro ao buscar som:', err);
-        });
-};
-
-
-btnV.addEventListener("click", () => {
+btnV.addEventListener("click", (event) => {
     if (numeroPokedex > 1) {
-        numeroPokedex--;
-        showPokemon(numeroPokedex);
+        numeroPokedex--
     }
-});
+    showPokemon(numeroPokedex);
+})
 
-btnP.addEventListener("click", () => {
+btnP.addEventListener("click", (event) => {
     if (numeroPokedex < 1000) {
-        numeroPokedex++;
-        showPokemon(numeroPokedex);
+        numeroPokedex++
     }
-});
-
+    showPokemon(numeroPokedex);
+})
