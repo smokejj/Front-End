@@ -37,10 +37,9 @@ figure img {
 
 #imgPokemon {
     position: absolute;
-    top: 43%;
+    top: 40%;
     width: 120px;
     height: 120px;
-    z-index: 2;
 }
 
 #imgPokemon img {
@@ -52,7 +51,7 @@ figure img {
 #input {
     position: absolute;
     top: 55%;
-    left: 39%;
+    left: 40%;
     font-size: 16px;
     border-radius: 6px;
     width: 19%;
@@ -93,10 +92,12 @@ figure img {
 
 #bottom {
     position: absolute;
-    top: 87%;
+    top: 85%;
     left: 42%;
     display: flex;
     gap: 15px;
+    height: 5%;
+
 }
 
 #btnVoltar,

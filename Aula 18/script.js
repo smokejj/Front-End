@@ -32,12 +32,31 @@ const showPokemon = async (pokemon) => {
     habilidadePoke.innerHTML = dataPokemon.abilities[0].ability.name;
     pesoPoke.innerHTML = (dataPokemon.weight / 10).toFixed(1) + " kg";
     alturaPoke.innerHTML = (dataPokemon.height / 10).toFixed(1) + " m";
+
+    playCry(dataPokemon.id);
 }
 
 formPoke.addEventListener("submit", (event) => {
     event.preventDefault();
     showPokemon(inputF.value.toLowerCase());
 });
+
+const playCry = (pokemonId) => {
+    // Faz uma requisição para pegar o som do Pokémon
+    fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokemonId}/`)
+        .then(response => response.json())
+        .then(data => {
+            const cryUrl = `https://pokeapi.co/media/sounds/cry/${pokemonId}.mp3`; // URL padrão de som de Pokémon
+            const audio = new Audio(cryUrl);
+            audio.play().catch(err => {
+                console.warn('Som não disponível para este Pokémon', err);
+            });
+        })
+        .catch(err => {
+            console.warn('Erro ao buscar som:', err);
+        });
+};
+
 
 btnV.addEventListener("click", () => {
     if (numeroPokedex > 1) {
