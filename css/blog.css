@@ -11,6 +11,16 @@ body {
   color: black;
 }
 
+.container.paineis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+  margin-top: 105px;
+  padding: 0 20px;
+}
+
+
 .menu-opcoes {
   width: 100%;
   background-color: #000000;
@@ -64,6 +74,10 @@ a {
   margin-top: 7px;
 }
 
+.painelViz img{
+  width: 100%;
+  height: 100%;
+}
 
 
 .painel p {
@@ -120,8 +134,19 @@ footer .social li a:hover {
   transition: transform 0.3s ease;
 }
 
+.painelViz {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+
 .painelCalculadora {
-    background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05);
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
@@ -129,8 +154,19 @@ footer .social li a:hover {
   width: 100%;
   transition: transform 0.3s ease;
 }
+
 .painelPoke {
-    background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  max-width: 27%;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.painelNey {
+  background: rgba(255, 255, 255, 0.05);
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
@@ -143,11 +179,20 @@ footer .social li a:hover {
 .painelGrito:hover {
   transform: translateY(-5px);
 }
+
 .painelPoke:hover {
   transform: translateY(-5px);
 }
 
 .painelCalculadora:hover {
+  transform: translateY(-5px);
+}
+
+.painelViz:hover {
+  transform: translateY(-5px);
+}
+
+.painelNey:hover {
   transform: translateY(-5px);
 }
 
@@ -158,7 +203,36 @@ footer .social li a:hover {
   color: white;
 }
 
-.painelCalculadora h3{
+.painelViz h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color: white;
+}
+
+.painelCalculadora h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color: white;
+}
+
+
+.painelNey h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color: white;
+}
+
+.painelPoke h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color: white;
+}
+
+.painelViz h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
   text-align: center;
@@ -166,6 +240,14 @@ footer .social li a:hover {
 }
 
 .painelGrito ol {
+  list-style: none;
+}
+
+.painelViz ol {
+  list-style: none;
+}
+
+.painelNey ol {
   list-style: none;
 }
 
@@ -187,7 +269,49 @@ footer .social li a:hover {
   margin-bottom: 10px;
 }
 
+
+.painelPoke a {
+  color: #e1eaea;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+.painelViz a {
+  color: #e1eaea;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.painelNey a {
+  color: #e1eaea;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
 .painelGrito a:hover {
+  text-decoration: underline;
+}
+
+
+.painelPoke a:hover {
+  text-decoration: underline;
+}
+
+.painelViz a:hover {
+  text-decoration: underline;
+}
+
+.painelNey a:hover {
   text-decoration: underline;
 }
 
@@ -202,6 +326,27 @@ footer .social li a:hover {
   width: 100%;
   height: auto;
   border-radius: 12px;
+  border: 2px solid #00ffff33;
+}
+
+.imgPoke {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;  
+  border: 2px solid #00ffff33;
+}
+
+.imgViz  {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;  
+  border: 2px solid #00ffff33;
+}
+
+.imgNey  {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;  
   border: 2px solid #00ffff33;
 }
 
