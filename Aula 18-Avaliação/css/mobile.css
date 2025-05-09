@@ -1,0 +1,84 @@
+/* 
+  Estilos para telas menores que 768px (como smartphones)
+  Essa media query torna o layout adaptável em celulares.
+*/
+@media screen and (max-width: 768px) {
+
+    body, html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('../img/download (2).jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20px;
+        height: auto;
+    }
+
+    figure img {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    #imgPokemon {
+        position: relative;
+        top: 0;
+        margin-top: -80px;
+        width: 100px;
+        height: 100px;
+    }
+
+    #imgPokemon img {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    #input {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 80%;
+        margin: 10px auto;
+        display: block;
+        font-size: 16px;
+    }
+
+    #nome, #inf, #inf2, #bottom {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    #inf {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    #inf2 {
+        font-size: 13px;
+    }
+
+    #bottom {
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    #btnVoltar, #btnProximo {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
