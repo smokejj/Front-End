@@ -65,6 +65,7 @@ a {
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease;
+ 
 }
 
 .painel img {
@@ -122,6 +123,7 @@ footer .social li a:hover {
   align-items: center;
   gap: 30px;
   margin-top: 105px;
+  cursor: pointer;
 }
 
 .painelGrito {

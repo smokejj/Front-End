@@ -29,17 +29,15 @@ figure {
 figure img {
     width: 100%;
     height: 100%;
-    max-width: 600px;
-    max-height: 600px;
     object-fit: contain;
 }
 
 /* Posição da imagem do Pokémon */
 #imgPokemon {
     position: absolute;
-    top: 40%;
-    width: 120px;
-    height: 120px;
+    top: 42%;
+    width: 12%;
+    height: 12%;
 }
 
 #imgPokemon img {
@@ -52,51 +50,44 @@ figure img {
 /* Campo de texto para busca */
 #input {
     position: absolute;
-    top: 55%;
-    left: 40%;
+    top: 53%;
+    left: 43%;
     font-size: 16px;
     border-radius: 6px;
-    width: 19%;
+    width: 12%;
 }
 
 /* Estilo dos dados */
 #nome, #inf, #inf2 {
     position: absolute;
-    left: 40%;
-    font-size: 14px;
+    left: 42%;
+    font-size: 100%;
 }
 
 #nome {
-    top: 65%;
+    top: 60%;
     font-weight: bold;
     text-align: center;
 }
 
 #inf {
-    top: 70%;
+    top: 63%;
     display: flex;
     gap: 10px;
 }
 
 #inf2 {
-    top: 75%;
+    top: 68%;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-/* Destaque dos valores */
-#habilidade,
-#peso,
-#altura {
-    font-weight: 500;
-}
-
 /* Estilo dos botões */
 #bottom {
     position: absolute;
-    top: 86%;
-    left: 42%;
+    top: 76%;
+    left: 45%;
     display: flex;
     gap: 15px;
 }
